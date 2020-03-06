@@ -97,34 +97,28 @@ class _SignupPageState extends State<SignupPage> {
                         ),
                       )),
                   SizedBox(height: 20.0),
-                  Container(
-                    height: 40.0,
-                    color: Colors.transparent,
-                    child: Container(
-                      decoration: BoxDecoration(
-                          border: Border.all(
-                              color: Colors.black,
-                              style: BorderStyle.solid,
-                              width: 1.0),
-                          color: Colors.transparent,
-                          borderRadius: BorderRadius.circular(20.0)),
-                      child: InkWell(
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Text(
+                        'Have an account already?',
+                        style: TextStyle(fontFamily: 'Montserrat'),
+                      ),
+                      SizedBox(width: 5.0),
+                      InkWell(
                         onTap: () {
                           Navigator.of(context).pop();
                         },
-                        child:
-
-                        Center(
-                          child: Text('Go Back',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontFamily: 'Montserrat')),
+                        child: Text(
+                          'Login',
+                          style: TextStyle(
+                            color: Colors.deepOrange,
+                            fontFamily: 'Montserrat',
+                            fontWeight: FontWeight.bold,),
                         ),
-
-
                       ),
-                    ),
-                  ),
+                    ],
+                  )
                 ],
               )),
         ]));

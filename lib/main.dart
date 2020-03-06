@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:loginn/forgotpassword.dart';
 import 'signup.dart';
-import 'package:flutter/services.dart';
 
 void main() => runApp(new MyApp());
 
@@ -10,7 +10,8 @@ class MyApp extends StatelessWidget {
     return new MaterialApp(
       debugShowCheckedModeBanner: false,
       routes: <String, WidgetBuilder>{
-        '/signup': (BuildContext context) => new SignupPage()
+        '/signup': (BuildContext context) => new SignupPage(),
+        '/forgotpassword': (BuildContext context) => new ForgotPasswordPage()
       },
       home: new MyHomePage(),
     );
@@ -87,6 +88,9 @@ class _MyHomePageState extends State<MyHomePage> {
                       alignment: Alignment(1.0, 0.0),
                       padding: EdgeInsets.only(top: 15.0, left: 20.0),
                       child: InkWell(
+                        onTap: () {
+                          Navigator.of(context).pushNamed('/forgotpassword');
+                        },
                         child: Text(
                           'Forgot Password',
                           style: TextStyle(
@@ -170,7 +174,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         fontFamily: 'Montserrat',
                         fontWeight: FontWeight.bold,),
                   ),
-                )
+                ),
               ],
             )
           ],
