@@ -21,7 +21,7 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
                   child: Text(
                     'Forgot Password?',
                     style:
-                    TextStyle(fontSize: 80.0, fontWeight: FontWeight.bold),
+                        TextStyle(fontSize: 80.0, fontWeight: FontWeight.bold),
                   ),
                 ),
               ],
@@ -46,17 +46,19 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
                   // hintText: 'EMAIL',
                   // hintStyle: ,
                   focusedBorder: UnderlineInputBorder(
-                      borderSide: BorderSide(color: Colors.deepOrange))),
+                      borderSide: BorderSide(color: Colors.blue[900]))),
             ),
           ),
-          SizedBox(height: 40.0,),
+          SizedBox(
+            height: 40.0,
+          ),
           Container(
-            padding: EdgeInsets.only(left: 15.0, right: 15.0),
+              padding: EdgeInsets.only(left: 15.0, right: 15.0),
               height: 40.0,
               child: Material(
                 borderRadius: BorderRadius.circular(20.0),
-                shadowColor: Colors.orangeAccent,
-                color: Colors.deepOrange,
+                shadowColor: Colors.blueAccent,
+                color: Colors.blue[900],
                 elevation: 7.0,
                 child: GestureDetector(
                   onTap: () {},

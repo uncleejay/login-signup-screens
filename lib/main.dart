@@ -36,13 +36,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 children: <Widget>[
                   Container(
                     padding: EdgeInsets.fromLTRB(15.0, 110.0, 0.0, 0.0),
-                    child: Text('Hi',
+                    child: Text('Hello',
                         style: TextStyle(
                             fontSize: 80.0, fontWeight: FontWeight.bold)),
                   ),
                   Container(
                     padding: EdgeInsets.fromLTRB(16.0, 175.0, 0.0, 0.0),
-                    child: Text('Boss',
+                    child: Text('Dear',
                         style: TextStyle(
                             fontSize: 80.0, fontWeight: FontWeight.bold)),
                   ),
@@ -52,7 +52,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         style: TextStyle(
                             fontSize: 80.0,
                             fontWeight: FontWeight.bold,
-                            color: Colors.deepOrange)),
+                            color: Colors.blue[900])),
                   )
                 ],
               ),
@@ -69,7 +69,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               fontWeight: FontWeight.bold,
                               color: Colors.grey),
                           focusedBorder: UnderlineInputBorder(
-                              borderSide: BorderSide(color: Colors.deepOrange))),
+                              borderSide: BorderSide(color: Colors.blue[900]))),
                     ),
                     SizedBox(height: 20.0),
                     TextField(
@@ -80,7 +80,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               fontWeight: FontWeight.bold,
                               color: Colors.grey),
                           focusedBorder: UnderlineInputBorder(
-                              borderSide: BorderSide(color: Colors.deepOrange))),
+                              borderSide: BorderSide(color: Colors.blue[900]))),
                       obscureText: true,
                     ),
                     SizedBox(height: 5.0),
@@ -94,7 +94,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         child: Text(
                           'Forgot Password',
                           style: TextStyle(
-                              color: Colors.deepOrange,
+                              color: Colors.blue[900],
                               fontWeight: FontWeight.bold,
                               fontFamily: 'Montserrat',),
                         ),
@@ -105,8 +105,8 @@ class _MyHomePageState extends State<MyHomePage> {
                       height: 40.0,
                       child: Material(
                         borderRadius: BorderRadius.circular(20.0),
-                        shadowColor: Colors.orangeAccent,
-                        color: Colors.deepOrange,
+                        shadowColor: Colors.blueAccent,
+                        color: Colors.blue[900],
                         elevation: 7.0,
                         child: GestureDetector(
                           onTap: () {},
@@ -170,7 +170,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   child: Text(
                     'Register',
                     style: TextStyle(
-                        color: Colors.deepOrange,
+                        color: Colors.blue[900],
                         fontFamily: 'Montserrat',
                         fontWeight: FontWeight.bold,),
                   ),
